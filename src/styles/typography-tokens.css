@@ -1,0 +1,135 @@
+:root {
+  --font-family-pretendard:
+    Pretendard Variable, Pretendard, -apple-system, system-ui, sans-serif;
+
+  /* Typography - Headline */
+  --text-headline-48: 48px;
+  --text-headline-48--line-height: 64px;
+  --text-headline-48--font-weight: 700;
+
+  --text-headline-36: 36px;
+  --text-headline-36--line-height: 52px;
+  --text-headline-36--font-weight: 700;
+
+  --text-headline-32: 32px;
+  --text-headline-24--line-height: 52px;
+  --text-headline-24--font-weight: 700;
+
+  /* Typography - Body */
+  --text-body-24-b: 24px;
+  --text-body-24-b--line-height: 28px;
+  --text-body-24-b--font-weight: 700;
+
+  --text-body-24: 24px;
+  --text-body-24--line-height: 28px;
+  --text-body-24--font-weight: 500;
+
+  --text-body-20-b: 20px;
+  --text-body-20-b--line-height: 28px;
+  --text-body-20-b--font-weight: 700;
+
+  --text-body-20-sb: 20px;
+  --text-body-20-sb--line-height: 28px;
+  --text-body-20-sb--font-weight: 600;
+
+  --text-body-20: 20px;
+  --text-body-20--line-height: 28px;
+  --text-body-20--font-weight: 500;
+
+  --text-body-16-b: 16px;
+  --text-body-16-b--line-height: 20px;
+  --text-body-16-b--font-weight: 700;
+
+  --text-body-16: 16px;
+  --text-body-16--line-height: 20px;
+  --text-body-16--font-weight: 500;
+
+  /* Typography - Caption */
+  --text-caption-14-sb: 14px;
+  --text-caption-14-sb--line-height: 20px;
+  --text-caption-14-sb--font-weight: 600;
+
+  --text-caption-14: 14px;
+  --text-caption-14--line-height: 20px;
+  --text-caption-14--font-weight: 500;
+
+  --text-caption-14-r: 14px;
+  --text-caption-14-r--line-height: 20px;
+  --text-caption-14-r--font-weight: 400;
+
+  --text-caption-12: 12px;
+  --text-caption-12--line-height: 16px;
+  --text-caption-12--font-weight: 500;
+
+  --text-caption-12-r: 12px;
+  --text-caption-12-r--line-height: 16px;
+  --text-caption-12-r--font-weight: 400;
+}
+
+@theme inline {
+  /* Font Families */
+  --font-family-pretendard: var(--font-family-pretendard);
+
+  /* Typography - Headline */
+  --text-headline-48: var(--text-headline-48);
+  --text-headline-48--line-height: var(--text-headline-48--line-height);
+  --text-headline-48--font-weight: var(--text-headline-48--font-weight);
+
+  --text-headline-36: var(--text-headline-36);
+  --text-headline-36--line-height: var(--text-headline-36--line-height);
+  --text-headline-36--font-weight: var(--text-headline-36--font-weight);
+
+  --text-headline-32: var(--text-headline-32);
+  --text-headline-32--line-height: var(--text-headline-32--line-height);
+  --text-headline-32--font-weight: var(--text-headline-32--font-weight);
+
+  /* Typography - Body */
+  --text-body-24-b: var(--text-body-24-b);
+  --text-body-24-b--line-height: var(--text-body-24-b--line-height);
+  --text-body-24-b--font-weight: var(--text-body-24-b--font-weight);
+
+  --text-body-24: var(--text-body-24);
+  --text-body-24--line-height: var(--text-body-24--line-height);
+  --text-body-24--font-weight: var(--text-body-24--font-weight);
+
+  --text-body-20-b: var(--text-body-20-b);
+  --text-body-20-b--line-height: var(--text-body-20-b--line-height);
+  --text-body-20-b--font-weight: var(--text-body-20-b--font-weight);
+
+  --text-body-20-sb: var(--text-body-20-sb);
+  --text-body-20-sb--line-height: var(--text-body-20-sb--line-height);
+  --text-body-20-sb--font-weight: var(--text-body-20-sb--font-weight);
+
+  --text-body-20: var(--text-body-20);
+  --text-body-20--line-height: var(--text-body-20--line-height);
+  --text-body-20--font-weight: var(--text-body-20--font-weight);
+
+  --text-body-16-b: var(--text-body-16-b);
+  --text-body-16-b--line-height: var(--text-body-16-b--line-height);
+  --text-body-16-b--font-weight: var(--text-body-16-b--font-weight);
+
+  --text-body-16: var(--text-body-16);
+  --text-body-16--line-height: var(--text-body-16--line-height);
+  --text-body-16--font-weight: var(--text-body-16--font-weight);
+
+  /* Typography - Caption */
+  --text-caption-14-sb: var(--text-caption-14-sb);
+  --text-caption-14-sb--line-height: var(--text-caption-14-sb--line-height);
+  --text-caption-14-sb--font-weight: var(--text-caption-14-sb--font-weight);
+
+  --text-caption-14: var(--text-caption-14);
+  --text-caption-14--line-height: var(--text-caption-14--line-height);
+  --text-caption-14--font-weight: var(--text-caption-14--font-weight);
+
+  --text-caption-14-r: var(--text-caption-14-r);
+  --text-caption-14-r--line-height: var(--text-caption-14-r--line-height);
+  --text-caption-14-r--font-weight: var(--text-caption-14-r--font-weight);
+
+  --text-caption-12: var(--text-caption-12);
+  --text-caption-12--line-height: var(--text-caption-12--line-height);
+  --text-caption-12--font-weight: var(--text-caption-12--font-weight);
+
+  --text-caption-12-r: var(--text-caption-12-r);
+  --text-caption-12-r--line-height: var(--text-caption-12-r--line-height);
+  --text-caption-12-r--font-weight: var(--text-caption-12-r--font-weight);
+}

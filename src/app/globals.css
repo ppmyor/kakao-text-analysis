@@ -1,4 +1,23 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
 @import "tailwindcss";
 @import "../styles/color-tokens.css";
+@import "../styles/typography-tokens.css";
 
 @layer base, tokens, components, utilities;
+
+@layer base {
+  body {
+    font-family:
+      "Pretendard Variable",
+      Pretendard,
+      -apple-system,
+      system-ui,
+      sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-pretendard {
+    font-family: var(--font-family-pretendard);
+  }
+}
