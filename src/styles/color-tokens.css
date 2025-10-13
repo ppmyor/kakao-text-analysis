@@ -106,6 +106,39 @@
   --color-green-700: #5b8b31;
   --color-green-800: #477b18;
   --color-green-900: #326a00;
+
+  /* Alert Colors */
+  --color-alert-red: #d63838;
+  --color-alert-green: #5b8b31;
+  --color-alert-blue: #306ce5;
+
+  /* Overlay Black Colors */
+  --color-overlay-black-a1: rgba(0, 0, 0, 0.05);
+  --color-overlay-black-a2: rgba(0, 0, 0, 0.1);
+  --color-overlay-black-a3: rgba(0, 0, 0, 0.15);
+  --color-overlay-black-a4: rgba(0, 0, 0, 0.2);
+  --color-overlay-black-a5: rgba(0, 0, 0, 0.3);
+  --color-overlay-black-a6: rgba(0, 0, 0, 0.4);
+  --color-overlay-black-a7: rgba(0, 0, 0, 0.5);
+  --color-overlay-black-a8: rgba(0, 0, 0, 0.6);
+  --color-overlay-black-a9: rgba(0, 0, 0, 0.7);
+  --color-overlay-black-a10: rgba(0, 0, 0, 0.8);
+  --color-overlay-black-a11: rgba(0, 0, 0, 0.9);
+  --color-overlay-black-a12: rgba(0, 0, 0, 1);
+
+  /*Overlay White Colors */
+  --color-overlay-white-a1: rgba(255, 255, 255, 0.05);
+  --color-overlay-white-a2: rgba(255, 255, 255, 0.1);
+  --color-overlay-white-a3: rgba(255, 255, 255, 0.15);
+  --color-overlay-white-a4: rgba(255, 255, 255, 0.2);
+  --color-overlay-white-a5: rgba(255, 255, 255, 0.3);
+  --color-overlay-white-a6: rgba(255, 255, 255, 0.4);
+  --color-overlay-white-a7: rgba(255, 255, 255, 0.5);
+  --color-overlay-white-a8: rgba(255, 255, 255, 0.6);
+  --color-overlay-white-a9: rgba(255, 255, 255, 0.7);
+  --color-overlay-white-a10: rgba(255, 255, 255, 0.8);
+  --color-overlay-white-a11: rgba(255, 255, 255, 0.9);
+  --color-overlay-white-a12: rgba(255, 255, 255, 1);
 }
 
 @theme inline {
@@ -216,4 +249,85 @@
   --color-green-700: var(--color-green-700); /* #5b8b31 */
   --color-green-800: var(--color-green-800); /* #477b18 */
   --color-green-900: var(--color-green-900); /* #326a00 */
+
+  /* Alert Colors */
+  --color-alert-red: var(--color-alert-red); /* #d63838 */
+  --color-alert-green: var(--color-alert-green); /* #5b8b31 */
+  --color-alert-blue: var(--color-alert-blue); /* #306ce5 */
+
+  /* Overlay Black Colors */
+  --color-overlay-black-a1: var(
+    --color-overlay-black-a1
+  ); /* rgba(0, 0, 0, 0.05) */
+  --color-overlay-black-a2: var(
+    --color-overlay-black-a2
+  ); /* rgba(0, 0, 0, 0.1) */
+  --color-overlay-black-a3: var(
+    --color-overlay-black-a3
+  ); /* rgba(0, 0, 0, 0.15) */
+  --color-overlay-black-a4: var(
+    --color-overlay-black-a4
+  ); /* rgba(0, 0, 0, 0.2) */
+  --color-overlay-black-a5: var(
+    --color-overlay-black-a5
+  ); /* rgba(0, 0, 0, 0.3) */
+  --color-overlay-black-a6: var(
+    --color-overlay-black-a6
+  ); /* rgba(0, 0, 0, 0.4) */
+  --color-overlay-black-a7: var(
+    --color-overlay-black-a7
+  ); /* rgba(0, 0, 0, 0.5) */
+  --color-overlay-black-a8: var(
+    --color-overlay-black-a8
+  ); /* rgba(0, 0, 0, 0.6) */
+  --color-overlay-black-a9: var(
+    --color-overlay-black-a9
+  ); /* rgba(0, 0, 0, 0.7) */
+  --color-overlay-black-a10: var(
+    --color-overlay-black-a10
+  ); /* rgba(0, 0, 0, 0.8) */
+  --color-overlay-black-a11: var(
+    --color-overlay-black-a11
+  ); /* rgba(0, 0, 0, 0.9) */
+  --color-overlay-black-a12: var(
+    --color-overlay-black-a12
+  ); /* rgba(0, 0, 0, 1) */
+
+  /* Overlay White Colors */
+  --color-overlay-white-a1: var(
+    --color-overlay-white-a1
+  ); /* rgba(255, 255, 255, 0.05) */
+  --color-overlay-white-a2: var(
+    --color-overlay-white-a2
+  ); /* rgba(255, 255, 255, 0.1) */
+  --color-overlay-white-a3: var(
+    --color-overlay-white-a3
+  ); /* rgba(255, 255, 255, 0.15) */
+  --color-overlay-white-a4: var(
+    --color-overlay-white-a4
+  ); /* rgba(255, 255, 255, 0.2) */
+  --color-overlay-white-a5: var(
+    --color-overlay-white-a5
+  ); /* rgba(255, 255, 255, 0.3) */
+  --color-overlay-white-a6: var(
+    --color-overlay-white-a6
+  ); /* rgba(255, 255, 255, 0.4) */
+  --color-overlay-white-a7: var(
+    --color-overlay-white-a7
+  ); /* rgba(255, 255, 255, 0.5) */
+  --color-overlay-white-a8: var(
+    --color-overlay-white-a8
+  ); /* rgba(255, 255, 255, 0.6) */
+  --color-overlay-white-a9: var(
+    --color-overlay-white-a9
+  ); /* rgba(255, 255, 255, 0.7) */
+  --color-overlay-white-a10: var(
+    --color-overlay-white-a10
+  ); /* rgba(255, 255, 255, 0.8) */
+  --color-overlay-white-a11: var(
+    --color-overlay-white-a11
+  ); /* rgba(255, 255, 255, 0.9) */
+  --color-overlay-white-a12: var(
+    --color-overlay-white-a12
+  ); /* rgba(255, 255, 255, 1) */
 }
