@@ -9,9 +9,14 @@ import type {
 
 type TPostChatResponse = TResponseData<TPostChatResponseData>;
 
+// src/requests/upload/postChat.ts
 export default function postChat(
-  data: TPostChatRequestData,
+  uploadfile: TPostChatRequestData,
 ): Promise<AxiosResponse<TPostChatResponse>> {
   const url = URL_API_CHAT;
-  return request.post<TPostChatResponse>(url, data);
+  return request.post<TPostChatResponse>(url, uploadfile, {
+    headers: {
+      "Content-Type": "multipart/form-data",
+    },
+  });
 }

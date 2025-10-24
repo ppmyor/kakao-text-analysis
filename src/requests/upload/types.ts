@@ -1,6 +1,4 @@
-export type TPostChatRequestData = {
-  uploadfile: File;
-};
+export type TPostChatRequestData = FormData;
 
 export type TPostChatResponseData = {
   id: number;
