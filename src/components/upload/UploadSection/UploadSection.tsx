@@ -1,11 +1,11 @@
 "use client";
 
-import ClipLoader from "react-spinners/ClipLoader";
 import {
   ChatBubbleLeftEllipsisIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import useTalkFileUpload from "@/hooks/upload/useTalkFileUpload";
+import Loading from "@/components/common/Loading";
 import Button from "@/components/common/Button";
 
 export default function UploadSection() {
@@ -18,11 +18,7 @@ export default function UploadSection() {
   } = useTalkFileUpload();
 
   if (isPending) {
-    return (
-      <div className="flex h-full items-center justify-center">
-        <ClipLoader size={50} color="var(--color-amber-500)" />
-      </div>
-    );
+    return <Loading />;
   }
   return (
     <div className="flex h-full flex-col items-center justify-center gap-4 rounded-lg border-2 border-dashed border-gray-100">
