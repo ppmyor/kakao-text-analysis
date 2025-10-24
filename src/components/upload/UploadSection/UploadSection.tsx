@@ -1,7 +1,16 @@
+"use client";
+
+import {
+  ChatBubbleLeftEllipsisIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
+import useTalkFileUpload from "@/hooks/upload/useTalkFileUpload";
 import Button from "@/components/common/Button";
-import { ChatBubbleLeftEllipsisIcon } from "@heroicons/react/24/outline";
 
 export default function UploadSection() {
+  const { currentFile, handleFileInput, handleFileUpload, handleFileDelete } =
+    useTalkFileUpload();
+
   return (
     <div className="flex h-full flex-col items-center justify-center gap-4 rounded-lg border-2 border-dashed border-gray-100">
       <div className="relative">
@@ -10,17 +19,51 @@ export default function UploadSection() {
           카카오톡 대화내역 파일을 업로드해주세요.
         </p>
       </div>
-      <input type="file" id="upload-file" accept=".txt" className="hidden" />
-      <label htmlFor="upload-file">
-        <Button
-          type="button"
-          size="medium"
-          rounded="2xl"
-          className="pointer-events-none w-fit"
-        >
-          Upload
-        </Button>
-      </label>
+      <form>
+        {currentFile === null ? (
+          <div>
+            <input
+              type="file"
+              id="upload-file"
+              accept=".txt, .csv"
+              className="hidden"
+              onChange={handleFileInput}
+            />
+            <label htmlFor="upload-file" aria-label="Upload file">
+              <Button
+                type="button"
+                size="medium"
+                rounded="2xl"
+                className="pointer-events-none w-fit"
+              >
+                파일 업로드
+              </Button>
+            </label>
+          </div>
+        ) : (
+          <div className="flex flex-col items-center gap-4">
+            <div className="flex items-center gap-1">
+              <p className="text-caption-14">{currentFile.name}</p>
+              <button
+                type="button"
+                className="cursor-pointer"
+                onClick={handleFileDelete}
+              >
+                <XMarkIcon className="size-4" />
+              </button>
+            </div>
+            <Button
+              type="button"
+              size="medium"
+              rounded="2xl"
+              className="w-fit cursor-pointer"
+              onClick={handleFileUpload}
+            >
+              대화 분석하기
+            </Button>
+          </div>
+        )}
+      </form>
     </div>
   );
 }
