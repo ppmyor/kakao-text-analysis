@@ -3,6 +3,7 @@ import { useUploadMutation } from "@/hooks/query/upload/useUploadMutation";
 
 interface UseFileUploadHook {
   currentFile: File | null;
+  isPending: boolean;
   handleFileInput: (event: React.ChangeEvent<HTMLInputElement>) => void;
   handleFileUpload: () => void;
   handleFileDelete: () => void;
@@ -11,7 +12,7 @@ interface UseFileUploadHook {
 export default function useTalkFileUpload(): UseFileUploadHook {
   const [currentFile, setCurrentFile] = useState<File | null>(null);
 
-  const { mutate: postChat } = useUploadMutation({
+  const { mutate: postChat, isPending } = useUploadMutation({
     options: {
       onSuccess: (data) => {
         console.log(data);
@@ -46,6 +47,7 @@ export default function useTalkFileUpload(): UseFileUploadHook {
 
   return {
     currentFile,
+    isPending,
     handleFileInput,
     handleFileUpload,
     handleFileDelete,
