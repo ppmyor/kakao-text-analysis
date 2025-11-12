@@ -1,5 +1,7 @@
 import { useState } from "react";
+import useTalkStore from "@/store/useTalkStore";
 import { useUploadMutation } from "@/hooks/query/upload/useUploadMutation";
+import { useRouter } from "next/navigation";
 
 interface UseFileUploadHook {
   currentFile: File | null;
@@ -10,12 +12,14 @@ interface UseFileUploadHook {
 }
 
 export default function useTalkFileUpload(): UseFileUploadHook {
+  const router = useRouter();
   const [currentFile, setCurrentFile] = useState<File | null>(null);
-
+  const { setTalkUid } = useTalkStore();
   const { mutate: postChat, isPending } = useUploadMutation({
     options: {
       onSuccess: (data) => {
-        console.log(data);
+        setTalkUid(data.uuid);
+        router.replace("/main");
       },
       onError: (error) => {
         console.log(error);

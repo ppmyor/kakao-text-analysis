@@ -9,7 +9,6 @@ import type {
 
 type TPostChatResponse = TResponseData<TPostChatResponseData>;
 
-// src/requests/upload/postChat.ts
 export default function postChat(
   uploadfile: TPostChatRequestData,
 ): Promise<AxiosResponse<TPostChatResponse>> {
